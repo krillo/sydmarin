@@ -31,7 +31,7 @@ get_header();
     echo '<h3>' . get_the_title() . '</h3>';
     echo '<div class="entry-content">';
     echo '<p>' .  the_content().'</p></div>';
-    echo '</div>';
+    echo '</div></a>';
   endwhile;
   ?>
 

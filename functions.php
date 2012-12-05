@@ -54,25 +54,28 @@ add_theme_support('post-thumbnails'); //to be able to use "get_the_post_thumbnai
 /**
  * Enqueue some java scripts
  */
-function my_scripts_method() {
+function sydmarin_scripts() {
   wp_deregister_script('jquery');
   wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js');
   wp_enqueue_script('jquery');
-  wp_register_script('jquery.tinycarousel.min.js', get_bloginfo('stylesheet_directory').'/js/jquery.tinycarousel.min.js');
-  wp_enqueue_script( 'jquery.tinycarousel.min.js' );
+  wp_register_script('jquery.flow.1.1.js', get_bloginfo('stylesheet_directory').'/js/jquery.flow.1.1.js');
+  wp_enqueue_script( 'jquery.flow.1.1.js' );
+  
+  //wp_register_script('jquery.tinycarousel.min.js', get_bloginfo('stylesheet_directory').'/js/jquery.tinycarousel.min.js');
+  //wp_enqueue_script( 'jquery.tinycarousel.min.js' );
 }
-add_action('wp_enqueue_scripts', 'my_scripts_method');
+add_action('wp_enqueue_scripts', 'sydmarin_scripts');
 
 
 /**
  * add two menues
  */
-function register_my_menus() {
+function register_sydmarin_menus() {
   register_nav_menus(
-    array( 'primary' => __( 'Båtar' ), 'shipyard' => __( 'Varv' ))
+    array( 'boat' => __( 'Båt' ), 'shipyard' => __( 'Varv' ))
   );
 }
-add_action( 'init', 'register_my_menus' );
+add_action( 'init', 'register_sydmarin_menus' );
 
 
 
