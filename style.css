@@ -52,13 +52,13 @@ p{font-weight: 400;}
 
 
 /*menu*/
-#access {margin: 0 auto 0;}
-#access {background: none;border-bottom: solid #818181 1px;padding-left: 50px;}
+#access {margin: 20px auto 0;}
+#access {background: none;border-bottom: solid #818181 1px;}
 #access a{color:#818181;text-transform: uppercase;font-size: 11px;padding:0 20px;font-weight: 600;}
-#access li:first-child{margin-left: 0px;border-left:solid #fff 1px;}
-#access li{border-right:solid #818181 1px;}
+#access li:first-child{margin-left: 40px;}
+#access li{border-left:solid #818181 1px;}
 #access ul ul {top: 22px;}
-#access li li, #access li li:first-child{border: none;}
+#access li li, #access li li:last-child{border: none;}
 #access ul ul a {background: rgb(222, 222, 222);background: rgba(0, 0, 0, 0.7);font-weight:100;}
 #access li:hover > a, #access ul ul :hover > a {background: rgb(222, 222, 222);background: rgba(0, 0, 0, 0.7);}
 #access ul ul a:hover {background: rgb(206, 206, 206);background: rgba(0, 0, 0, 0.9);}
@@ -73,19 +73,21 @@ p{font-weight: 400;}
 
 
 #splash {
-  background: none repeat scroll 0 0 #00BAF3;
+  background: none repeat scroll 0 0 #909090;
   display: block;
   float: left;
-  font-size: 15px;
-  font-weight: normal;
-  height: 92px;
-  left: 45px;
-  opacity: 0.9;
-  padding: 15px 20px 0;
+  font-size: 34px;
+  font-weight: lighter;
+  font-family: helvetica;
+  height: 55px;
+  left: 0;
+  opacity: 0.8;
+  padding: 15px 10px 0 30px;
   position: relative;
   top: -400px;
-  width: 440px;
-  z-index: 100;
+  width: 400px;
+  z-index: 10;
+  color:#fff;
 }  
 
 /*shipyard*/
@@ -111,11 +113,13 @@ p{font-weight: 400;}
 #boatstart-puffs{float:left;margin-left: 50px;margin-bottom: -20px;}
 #boatstart-puffs a{text-decoration: none;}
 #boatstart-puffs h3{float:left;font-size: 12px;margin:5px 0 6px 15px;}
-.boatstart-puff{float:left;width:200px; height:170px;overflow: hidden;margin-right: 30px;margin-top: -162px;background-color: #005369;color:#fff;
+.boatstart-puff{float:left;width:200px; height:180px;overflow: hidden;margin-right: 30px;margin-top: -162px;background-color: #235ea8;color:#fff;
                 border-radius: 8px 8px 0 0;
                 -moz-border-radius: 8px 8px 0 0;
                 -webkit-border-radius: 8px 8px 0 0;
+                border:solid 3px #235ea8;
 }
+.boatstart-puff-text{height:90px;}
 .boatstart-puff img{float:left;height: 100px;}
 .boatstart-puff p{float:left; margin:0 0 0 15px;font-size: 10px;padding-right: 5px;}
 
@@ -210,3 +214,4 @@ p{font-weight: 400;}
 #page-slideshow{float:left;width:400px;min-height: 500px;background-color: blue;}
 .highlight{font-weight:bold;}
 .slide img{height:500px;}
+.slide-big img{height:500px;width:960px;}

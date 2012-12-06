@@ -37,9 +37,6 @@
     <div id="page-slideshow">
       
       
-      
-      
-      
    <script language="javascript">
     $(document).ready(function(){
       $("#myController").jFlow({

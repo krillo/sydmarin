@@ -34,15 +34,13 @@ if ($paged >= 2 || $page >= 2)
     <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
     <![endif]-->
 
-<?php wp_head(); ?>
+    <?php wp_head(); ?>
   </head>
 
   <body <?php body_class(); ?>>
     <div id="page" class="hfeed">
       <header id="branding" role="banner">
-        <hgroup id="logo-yachtcenter">
-          <a  href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"></a>
-        </hgroup>
+        <a  href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><hgroup id="logo-yachtcenter"></hgroup></a>
         <hgroup id="logo">
           <img  src="<?php echo get_bloginfo('stylesheet_directory'); ?>/img/logo.png" alt="Sydmarin" />
         </hgroup>
