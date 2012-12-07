@@ -58,7 +58,7 @@ get_header();
     echo '       <p>' . the_content() . '</p>';
     echo '     </div>';
     echo '   </div>';
-    echo     the_post_thumbnail('post-puff-img');
+    echo '     <img src="'. get_field('image') . '" alt="" />';
     echo '  </div>';
     echo '</a>';
   endwhile;

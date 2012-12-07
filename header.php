@@ -63,4 +63,8 @@ if ($paged >= 2 || $page >= 2)
             }
             wp_nav_menu(array('theme_location' => $pagetype));
             ?>
+          <div id="search" class="">
+            <?php get_search_form(); ?>
+          </div>
+            
           </nav><!-- #access -->
