@@ -34,7 +34,8 @@ p{font-weight: 400; color:gray;}
 #email-tip{float:left;width:70px;}
 #search{float: right;height: 21px;width: 191px;}
 #search form{border: none; padding-top: 0px;}
-#search-text{float:left;height: 19px;width:159px;margin:0;border: none;color:#818181;font-size: 11px;text-transform: uppercase;font-family: helvetica;font-weight: bold;}
+#search-text{float:left;height: 19px;width:150px;margin:0;border: none;color:#818181;font-size: 11px;text-transform: uppercase;font-family: helvetica;font-weight: bold;}
+#search-img{float:right;}
 #search-fields{background-color: #FFFFFF;border: 1px solid #818181;border-bottom:none;height: 21px;margin: 0;padding: 0 0 0 7px;width: 182px;
              /*  box-shadow: 2px 3px 7px rgba(68, 68, 68, 0.5);
                -moz-box-shadow:2px 3px 7px rgba(68, 68, 68, 0.5);
@@ -218,7 +219,7 @@ p{font-weight: 400; color:gray;}
 
 #batborsen{margin:40px 0 0 50px;padding-bottom: 100px;}
 
-#footer{background-image: url('img/water.jpg');float:left;width:910px;height:32px;border-top:1px solid #FFF;color:#fff;padding-left: 50px;padding-top: 15px;}
+#footer{background-image: url('img/water.jpg');float:left;width:910px;height:32px;border-top:1px solid #FFF;color:#fff;padding-left: 40px;padding-top: 15px;}
 .footer-bullet{margin-left: 10px; margin-right: 10px; font-weight: bold;}
 #footer a{color:#fff;text-decoration: none;}
 

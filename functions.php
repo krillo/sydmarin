@@ -39,13 +39,13 @@ function create_post_type() {
 
 
 if (function_exists('add_image_size')) {
-  add_image_size('puff-img', 280, 130, true); //(cropped)
+/*  add_image_size('puff-img', 280, 130, true); //(cropped)
   add_image_size('page-img', 250, 250, true); //(cropped)
   add_image_size('post-puff-img', 200, 100, true); //(cropped)
   add_image_size('post-thumb-img', 70, 70, true); //(cropped)
   add_image_size('category-thumb-img', 90, 70, true); //(cropped)
   add_image_size('post-featured-img', 430, 320, true); //(cropped)
-  add_image_size('category-list-img', 120, 80, true); //(cropped)
+  add_image_size('category-list-img', 120, 80, true); //(cropped) */
 }
 
 add_theme_support('post-thumbnails'); //to be able to use "get_the_post_thumbnail"
