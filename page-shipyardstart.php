@@ -11,7 +11,7 @@ get_header();
         slides: "#mySlides",
         width: "960px",
         height: "448px",
-        timer: 5000,
+        timer: 10000,
         duration: 400
       });
     });

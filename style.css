@@ -20,7 +20,7 @@ body{font-family: Arial;width:960px;margin:auto;}
 h1{font-weight: 400;}
 h2{font-weight: 400;}
 h3{font-weight: 400;}
-p{font-weight: 400; color:gray;}
+p{font-weight: 400; color:gray; font-size: 14px;}
 
 
 /* hgroup{float:left;padding-left: 32px;height: 62px;} */
@@ -62,9 +62,10 @@ p{font-weight: 400; color:gray;}
 #access ul ul {top: 22px;}
 #access li li, #access li li:last-child{border: none;}
 #access ul ul a {background: rgb(222, 222, 222);background: rgba(0, 0, 0, 0.7);font-weight:100;}
-#access li:hover > a, #access ul ul :hover > a {background: rgb(222, 222, 222);background: rgba(0, 0, 0, 0.7);}
+#access li:hover > a, #access ul ul :hover > a {background: rgb(114, 193, 243);background: rgba(35, 93, 168, 1);color:#fff;}
 #access ul ul a:hover {background: rgb(206, 206, 206);background: rgba(0, 0, 0, 0.9);}
 #access ul li.current_page_item a{color: #235EA8;}
+#access ul li.current_page_item a:hover{color: #fff;}
 #access ul li.current-page-ancestor a{color: #235EA8;}
 
 /*start page*/
@@ -96,7 +97,7 @@ p{font-weight: 400; color:gray;}
   background: none repeat scroll 0 0 #235DA8;
   display: block;
   float: left;
-  font-size: 34px;
+  font-size: 25px;
   font-weight: lighter;
   font-family: helvetica;
   height: 130px;
@@ -233,14 +234,17 @@ p{font-weight: 400; color:gray;}
 #page-list h2 {border-bottom: 1px solid gray;padding-left: 12px;margin-bottom:10px;}
 #page-list h2 a{text-decoration: none;text-transform: uppercase;font-size: 11px; font-weight: bold;color:#235EA8;}
 #page-list ul{padding-left:12px; list-style: none;margin-top: 10px;}
+#page-list a:hover{color:#235EA8;}
 li{margin-left:0;}
 li a{text-decoration: none;text-transform: capitalize;font-size: 12px; font-weight: bold;color:gray;}
 
 
-#page-middle{float:left;width:370px;min-height: 520px;max-height: 520px;overflow: auto; background-color: white;padding:40px 10px 0 20px;}
+#page-middle{float:left;min-height: 520px;max-height: 520px;overflow: auto; background-color: white;padding:40px 10px 0 20px;}
 #page-middle h1{color:#235EA8;font-weight: bold;font-size: 15px;}
 #page-middle h2{color:#777;font-weight: bold;font-size: 15px;margin-bottom: 0;}
 #page-middle p{margin-top: 0;}
+.page-middle{width: 370px;}
+.no-slideshow{width: 780px;}
 #page-slideshow{float:left;width:410px;min-height: 560px;max-height: 560px; overflow: hidden; background-color: #F0F0F0;}
 li.current_page_item a{color:#111;}
 .slide img{height:560px;width:410px;}
