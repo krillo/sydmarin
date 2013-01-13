@@ -131,15 +131,20 @@ p{font-weight: 400; color:gray; font-size: 14px;}
 #boatstart-heading{float:left;margin:50px 0 0 50px; vertical-align: top;}
 #boatstart-heading h2{margin-top: 0;}
 #boatstart-text{float:left;margin:50px 10px 0 10px; width:360px;}
-#boatstart-puffs{float:left;margin-left: 50px;margin-bottom: -20px;}
+#boatstart-puffs{float:left;margin-left: 50px;margin-bottom: -20px;border: 2px;}
 #boatstart-puffs a{text-decoration: none;}
 #boatstart-puffs h3{float:left;font-size: 12px;margin:5px 0 6px 15px;}
-.boatstart-puff{float:left;width:200px; height:180px;overflow: hidden;margin-right: 30px;margin-top: -162px;background-color: #235ea8;color:#fff;
+.boatstart-puff{float:left;width:196px; height:180px;
+                overflow: hidden;
+                margin-right: 30px;
+                background-color: #235ea8;
+                color:#fff;
                 border-radius: 8px 8px 0 0;
                 -moz-border-radius: 8px 8px 0 0;
                 -webkit-border-radius: 8px 8px 0 0;
-                border:solid 3px #235ea8;
+                border: 2px solid #235EA8;
 }
+.shadow{ background: url("img/shadow.png") no-repeat scroll -2px 12px transparent;float: left;height: 188px;margin-top: -173px;padding: 11px;width: 200px;}
 .boatstart-puff-text{height:90px;}
 .boatstart-puff img{float:left;height: 100px; width: 200px;}
 .boatstart-puff p{float:left; margin:0 0 0 15px;font-size: 10px;padding-right: 5px;color:#fff;}

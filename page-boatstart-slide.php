@@ -50,7 +50,8 @@ get_header();
   $args = array('post_type' => 'batpuff', 'posts_per_page' => 3);
   $loop = new WP_Query($args);
   while ($loop->have_posts()) : $loop->the_post();
-    echo '<a href="batar?advert=' . get_field('link') . '" >';    
+    echo '<div class="shadow" >';    
+    echo '<a href="batar?advert=' . get_field('link') . '">';    
     echo '  <div class="boatstart-puff">';
     echo '   <div class="boatstart-puff-text">';    
     echo '     <h3>' . get_the_title() . '</h3>';
@@ -61,6 +62,7 @@ get_header();
     echo '     <img src="'. get_field('image') . '" alt="" />';
     echo '  </div>';
     echo '</a>';
+    echo '</div>';    
   endwhile;
   ?>
 </div>

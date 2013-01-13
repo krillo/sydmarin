@@ -50,6 +50,7 @@ get_header();
   $args = array('post_type' => 'varvspuff', 'posts_per_page' => 3);
   $loop = new WP_Query($args);
   while ($loop->have_posts()) : $loop->the_post();
+    echo '<div class="shadow" >';      
     echo '<a href="' . get_field('puff') . '" >';    
     echo '  <div class="boatstart-puff">';
     echo '   <div class="boatstart-puff-text">';    
@@ -61,6 +62,7 @@ get_header();
     echo '     <img src="'. get_field('image') . '" alt="" />';
     echo '  </div>';
     echo '</a>';
+    echo '</div>';        
   endwhile;
   ?>
 
