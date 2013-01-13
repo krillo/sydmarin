@@ -67,6 +67,7 @@ p{font-weight: 400; color:gray; font-size: 14px;}
 #access ul li.current_page_item a{color: #235EA8;}
 #access ul li.current_page_item a:hover{color: #fff;}
 #access ul li.current-page-ancestor a{color: #235EA8;}
+#access ul li.current-page-ancestor a:hover{color: #fff;}
 
 /*start page*/
 #varv{position: relative; left:50px;top:115px;}
