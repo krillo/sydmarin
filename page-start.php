@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <?php
 /**
   Template Name: Start
  */
-?><!DOCTYPE html>
+?>
 <!--[if IE 6]>
 <html id="ie6" <?php language_attributes(); ?>>
 <![endif]-->

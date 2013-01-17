@@ -22,10 +22,13 @@
       }
 
       $slideshow_post_id = get_the_ID();
-      if ($post->post_parent) {
-        $children = wp_list_pages("title_li=&child_of=" . $post->post_parent . "&echo=0");
-        $titlenamer = '<a href="' . get_page_link($post->post_parent) . '">' . get_the_title($post->post_parent) . '</a>';
-        $slideshow_post_id = $post->post_parent;
+      //print_r($post->ancestors);
+      //print_r($post);
+      if ($post->post_parent != 0) {
+        $forefather = end($post->ancestors);
+        $children = wp_list_pages("title_li=&child_of=" . $forefather . "&echo=0");
+        $titlenamer = '<a href="' . get_page_link($forefather) . '">' . get_the_title($forefather) . '</a>';
+        $slideshow_post_id = $forefather;
       } else {
         $children = wp_list_pages("title_li=&child_of=" . $post->ID . "&echo=0");
         $titlenamer = '<a href="' . get_page_link($post->post_parent) . '">' . get_the_title($post->post_parent) . '</a>';

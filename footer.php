@@ -3,7 +3,7 @@
 
 <footer>
   <div id="logo-partners">
-    <img  src="<?php echo get_bloginfo('stylesheet_directory'); ?>/img/logo_partners.png" alt="" />
+    <img  src="<?php echo get_bloginfo('stylesheet_directory'); ?>/img/logo_<?php global $pagetype;  echo $pagetype; ?>.png" alt="" />
   </div>
 
 

@@ -50,8 +50,10 @@ if ($paged >= 2 || $page >= 2)
           <nav id="access" role="navigation">
             <div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e('Skip to content', 'toolbox'); ?>"><?php _e('Skip to content', 'toolbox'); ?></a></div>
             <?php
+            global $pagetype;
+            $pagetype = '';
             $post_id = $wp_query->queried_object->ID;
-            $post_parent_id = $wp_query->queried_object->post_parent;
+            $post_parent_id = end ($wp_query->queried_object->ancestors);
             //echo "post_id ". $post_id . " post_parent " . $post_parent_id;
             if ($post_parent_id == 0) {
               $pagetype = get_field('pagetype', $post_id);
